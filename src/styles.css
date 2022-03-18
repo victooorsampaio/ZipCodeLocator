@@ -1,0 +1,104 @@
+.Container{
+    display:flex;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient( #a496fd, #8977ff ,#483d8b );
+}
+
+.Title{
+    font-size:80px;
+    color:#ffffff;
+    animation: FlipTitle 2s;
+}
+
+@keyframes FlipTitle {
+    from {
+        transform: rotateX(90deg)
+    }
+    to { transform : rotateX(0deg)
+    }
+    
+}
+
+.ContainerInput{
+    background-color: rgba(255,255,255,0.3);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+}
+
+.ContainerInput Input {
+    background-color: transparent;
+    border: 0;
+    font-size:20px;
+    color:#fff;
+    outline: none;
+    margin-right: 15px;
+}
+
+.ContainerInput Input::placeholder {
+    color:#f1f1f1;
+}
+
+.ButtonSearch{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.ButtonLupa{
+    font-size:22px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+    
+
+.ButtonLupa:hover{
+    transform : scale(1.3)
+}
+
+.Main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width:300px;
+    border-radius:10px;
+}
+
+.Main h2 {
+    margin: 14px 0;
+    font-size: 39px;
+}
+
+.Main h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Main h3 span{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media(max-width:640px){
+    .Title{
+        font-size:60px
+    }
+    .h2{
+        font-size:28px
+    }
+    .Main{
+        width:80%;
+        height:250px;
+    }
+}
